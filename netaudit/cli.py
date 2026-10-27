@@ -19,5 +19,10 @@ def inspect(file: str = typer.Argument(..., help="Path to the config file.")) ->
     print(content)
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Console script entrypoint (see pyproject.toml [project.scripts])."""
     app()
+
+
+if __name__ == "__main__":
+    main()
